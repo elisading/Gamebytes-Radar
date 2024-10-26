@@ -2,8 +2,8 @@ import type { NextApiRequest, NextApiResponse } from "next";
 
 import { PrivyClient, AuthTokenClaims } from "@privy-io/server-auth";
 
-const PRIVY_APP_ID = process.env.NEXT_PUBLIC_PRIVY_APP_ID;
-const PRIVY_APP_SECRET = process.env.PRIVY_APP_SECRET;
+const PRIVY_APP_ID = "cm1qxnbc108m4pz1ujl6vwvfs";
+const PRIVY_APP_SECRET = "5WQ5e9Sn9VcTyJxKfGocskLNTp8yzBCLTmN8FUShhoEygY4Egz2kova1RdUkSxdrANnDY8qVB1Q9irFaeUNqwtk9";
 const client = new PrivyClient(PRIVY_APP_ID!, PRIVY_APP_SECRET!);
 
 export type AuthenticateSuccessResponse = {
